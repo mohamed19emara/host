@@ -1,0 +1,97 @@
+/* Section Styling */
+.hosting-options-section {
+    padding: 80px 20px;
+    background-color: #fafafa;
+    text-align: center;
+  }
+   .hosting-container{
+    display: block;
+   }
+  .hosting-options-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333333;
+  }
+  
+  .hosting-options-section p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #666666;
+    line-height: 1.6;
+  }
+  
+  /* Hosting Options Grid */
+  .hosting-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Individual Hosting Card */
+  .hosting-card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hosting-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-color: #4caf50;
+  }
+  
+  /* Card Icon */
+  .hosting-card .icon {
+    font-size: 4rem;
+    color: #4caf50;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .hosting-card:hover .icon {
+    color: #388e3c; /* Darker green on hover */
+  }
+  
+  /* Card Heading */
+  .hosting-card h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333333;
+  }
+  
+  /* Card Description */
+  .hosting-card p {
+    font-size: 1rem;
+    color: #666666;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hosting-options-section h2 {
+      font-size: 2rem;
+    }
+  
+    .hosting-options-section p {
+      font-size: 1rem;
+    }
+  
+    .hosting-card h3 {
+      font-size: 1.4rem;
+    }
+  
+    .hosting-card p {
+      font-size: 0.95rem;
+    }
+  }
+  
